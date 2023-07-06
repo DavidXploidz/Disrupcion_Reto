@@ -1,0 +1,12 @@
+:root{
+  /* Colores */
+  --main-blue: #6582f8;
+  --green-sc: #64d075;
+  --danger: #d06d70;
+  --bg-body: #f4f9ff;
+  --fuentePrincipal: 'PT Sans', sans-serif;
+}
+body{
+  font-family: var(--fuentePrincipal);
+  background-color: var(--bg-body);
+}

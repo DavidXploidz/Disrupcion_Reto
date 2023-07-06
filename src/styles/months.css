@@ -1,0 +1,5 @@
+.bg-month{
+    background-color: var(--main-blue);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}

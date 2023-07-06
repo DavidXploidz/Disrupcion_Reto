@@ -1,0 +1,13 @@
+.rounded-10{
+    border-radius: 1rem;
+}
+.app-number{
+    color: var(--main-blue);
+    font-size: 2.4rem;
+}
+.app-number--success{
+    color: var(--green-sc);
+}
+.app-number--danger{
+    color: var(--danger);
+}
