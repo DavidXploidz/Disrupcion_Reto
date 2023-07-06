@@ -10,7 +10,7 @@ export default function Months() {
 
     const [months, setMonths] = useState([
         'Enero','Febrero','Marzo','Abril','Mayo','Junio',
-        'Diciembre','Agosto','Septiembre','Octubre','Noviembre','Diciembre'
+        'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'
     ]);
 
     const obtenerMesActual = () => {
@@ -33,7 +33,7 @@ export default function Months() {
     }
 
   return (
-    <div className='d-flex align-items-center gap-4 justify-content-center w-100 text-white py-4 bg-month'>
+    <div className='d-flex align-items-center gap-4 justify-content-center w-100 text-white py-4 bg-month shadow'>
         {/* {months.map((month, index) => (
             <button className='btn btn-primary' key={index}>{month}</button>
         ))} */}

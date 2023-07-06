@@ -11,3 +11,17 @@
 .app-number--danger{
     color: var(--danger);
 }
+.fixed-mov{
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.mov-btn{
+    border: none;
+    width: 100%;
+    background-color: var(--main-blue);
+    padding: .5rem 1rem;
+    min-width: 300px;
+}

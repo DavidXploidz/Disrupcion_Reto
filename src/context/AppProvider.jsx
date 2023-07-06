@@ -5,12 +5,19 @@ const AppContext = createContext()
 
 const AppProvider = ({children}) => {
 
-    const [dato, setDato] = useState('Hola')
+    const [modal, setModal] = useState(false);
+
+    const handleClickModal = () => {
+        setModal(!modal);
+        console.log('Abrir modal');
+    }
 
     return(
         <AppContext.Provider 
             value={{
-                dato
+                modal,
+                handleClickModal
+
             }} 
         >
             {children}

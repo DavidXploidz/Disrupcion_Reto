@@ -11,7 +11,7 @@ export default function Balance() {
         console.log('Expandir alv');
     }
   return (
-    <div className='bg-white p-3 mt-4 rounded-10 shadow'>
+    <div className='bg-white p-3 mt-4 rounded-10 shadow col-lg-6 mx-auto'>
         <p className='text-center fw-semibold fs-5'>Balance del mes</p>
         <p className='fw-bold text-center app-number'>$1070.15</p>
         <div className='row'>
@@ -24,7 +24,7 @@ export default function Balance() {
                 <p className='fs-1 fw-bold'>-$478.32</p>
             </div>
         </div>
-        <p onClick={() => handleClickAnaliticas()} className='mt-3 text-center text-body-tertiary fw-thin'>Ver analíticas {active ? <FaAngleUp /> : <FaAngleDown /> } </p>
+        <p onClick={() => handleClickAnaliticas()} className='mt-3 text-center text-body-tertiary fw-light'>Ver analíticas {active ? <FaAngleDown /> : <FaAngleUp /> } </p>
     </div>
   )
 }
