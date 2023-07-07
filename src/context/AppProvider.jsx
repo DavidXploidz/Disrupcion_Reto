@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import axios from 'axios';
 import calcularGasto from "../helpers/calcularGasto";
+import calcularIngreso from "../helpers/calcularIngreso";
 
 const AppContext = createContext()
 
@@ -32,6 +33,7 @@ const AppProvider = ({children}) => {
         const { data } = await axios('http://localhost:3000/movimientos');
         setMovimientos(data);
         setGastos(calcularGasto(data));
+        setIngresos(calcularIngreso(data));
     }
 
     return(
@@ -44,7 +46,8 @@ const AppProvider = ({children}) => {
                 handleClickModal,
                 movimientos,
                 consultarMovimientos,
-                gastos
+                gastos,
+                ingresos
             }} 
         >
             {children}

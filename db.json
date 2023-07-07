@@ -2,52 +2,17 @@
   "movimientos": [
     {
       "concepto": "Salario",
-      "cantidad": "12000",
+      "cantidad": "12500",
       "tipo": "ingreso",
       "fecha": "07 julio",
       "id": 1
     },
     {
       "concepto": "Uber",
-      "cantidad": "123",
+      "cantidad": "85",
       "tipo": "gasto",
       "fecha": "07 julio",
       "id": 2
-    },
-    {
-      "concepto": "Internet",
-      "cantidad": "134",
-      "tipo": "gasto",
-      "fecha": "07 julio",
-      "id": 3
-    },
-    {
-      "concepto": "Comida",
-      "cantidad": "50",
-      "tipo": "gasto",
-      "fecha": "07 julio",
-      "id": 4
-    },
-    {
-      "concepto": "Paleta",
-      "cantidad": "5",
-      "tipo": "gasto",
-      "fecha": "07 julio",
-      "id": 5
-    },
-    {
-      "concepto": "Uber",
-      "cantidad": "42",
-      "tipo": "gasto",
-      "fecha": "07 julio",
-      "id": 6
-    },
-    {
-      "concepto": "Comida",
-      "cantidad": "45",
-      "tipo": "gasto",
-      "fecha": "07 julio",
-      "id": 7
     }
   ]
 }
