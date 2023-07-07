@@ -3,6 +3,8 @@ import useApp from '../hooks/useApp';
 import Modal from 'react-modal';
 import { createRef, useState } from "react";
 import fechaActual from "../helpers/obtenerFecha";
+import { toast } from 'react-toastify';
+import axios from "axios";
 
 const customStyles = {
     content: {
@@ -28,15 +30,30 @@ export default function ModalMovimientos() {
     const [opcion, setOpcion] = useState('');
     const [movimiento, setMovimiento] = useState({});
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        fechaActual();
-        setMovimiento({
-            concepto : conceptoRef.current.value,
-            cantidad : cantidadRef.current.value,
+
+        const nuevoMovimiento = {
+            concepto: conceptoRef.current.value,
+            cantidad: cantidadRef.current.value,
+            tipo: opcion,
             fecha: fechaActual(),
-        })
+        };
+        setMovimiento(nuevoMovimiento);
+    
+        try {
+            const respuesta = await axios.post('http://localhost:3000/movimientos', nuevoMovimiento, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+            handleClickModal();
+            toast.success("Movimiento agregado correctamente!");
+        }catch (error) {
+            console.log(error);
+        }
     }
+
     console.log(movimiento)
 
   return (
@@ -58,7 +75,7 @@ export default function ModalMovimientos() {
             <div className={`border border-2 mt-3 p-3 rounded ${opcion === 'gasto' ? 'border-danger' : 'border-success'}`}>
                 {opcion === 'gasto' && <p className='fs-5 text-secondary fw-bolder'>Nuevo Gasto</p>}
                 {opcion === 'ingreso' && <p className='fs-5 text-secondary fw-bolder'>Nuevo Ingreso</p>}
-                <form action="" onSubmit={handleSubmit}>
+                <form method="POST" onSubmit={handleSubmit}>
                     <input ref={conceptoRef} className='p-1 bg-gray w-100 border rounded text-body-tertiary mb-2' type="text" placeholder='Concepto:' />
                     <input ref={cantidadRef} className='p-1 bg-gray w-100 border rounded text-body-tertiary mb-2' type="number" placeholder='Cantidad:' />
                     <input className='btn btn-primary' type="submit" value={"Agregar"} />

@@ -50,10 +50,6 @@
     }
   ],
   "movimientos": [
-    {
-      "id": "1",
-      "concepto": "Uber",
-      "cantidad": "233"
-    }
+  
   ]
 }

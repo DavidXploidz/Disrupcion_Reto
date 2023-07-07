@@ -4,6 +4,8 @@ import AgregarMovimiento from './components/AgregarMovimiento';
 import Balance from './components/Balance';
 import Months from './components/Months';
 import ModalMovimientos from './components/ModalMovimientos';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
   return (
     <>
       <Months />
+      <ToastContainer />
       <div className='container'>
         <Balance />
       </div>
