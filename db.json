@@ -1,55 +1,53 @@
 {
-  "meses": [
-    {
-      "id": "1",
-      "mes": "Enero"
-    },
-    {
-      "id": "2",
-      "mes": "Febrero"
-    },
-    {
-      "id": "3",
-      "mes": "Marzo"
-    },
-    {
-      "id": "4",
-      "mes": "Abril"
-    },
-    {
-      "id": "5",
-      "mes": "Mayo"
-    },
-    {
-      "id": "6",
-      "mes": "Junio"
-    },
-    {
-      "id": "7",
-      "mes": "Julio"
-    },
-    {
-      "id": "8",
-      "mes": "Agosto"
-    },
-    {
-      "id": "9",
-      "mes": "Septiembre"
-    },
-    {
-      "id": "10",
-      "mes": "Octubre"
-    },
-    {
-      "id": "11",
-      "mes": "Noviembre"
-    },
-    {
-      "id": "12",
-      "mes": "Diciembre"
-    }
-  ],
   "movimientos": [
-  
+    {
+      "concepto": "Salario",
+      "cantidad": "12000",
+      "tipo": "ingreso",
+      "fecha": "07 julio",
+      "id": 1
+    },
+    {
+      "concepto": "Uber",
+      "cantidad": "123",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 2
+    },
+    {
+      "concepto": "Internet",
+      "cantidad": "134",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 3
+    },
+    {
+      "concepto": "Comida",
+      "cantidad": "50",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 4
+    },
+    {
+      "concepto": "Paleta",
+      "cantidad": "5",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 5
+    },
+    {
+      "concepto": "Uber",
+      "cantidad": "42",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 6
+    },
+    {
+      "concepto": "Comida",
+      "cantidad": "45",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 7
+    }
   ]
 }

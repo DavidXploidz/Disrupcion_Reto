@@ -21,7 +21,7 @@ export default function ModalMovimientos() {
     const conceptoRef = createRef();
     const cantidadRef = createRef();
 
-    const { modal, handleClickModal } = useApp();
+    const { consultarMovimientos, modal, handleClickModal } = useApp();
  
     const handleClickAgregar = (opcion) => {
         setOpcion(opcion)
@@ -48,6 +48,7 @@ export default function ModalMovimientos() {
                 },
             });
             handleClickModal();
+            consultarMovimientos();
             toast.success("Movimiento agregado correctamente!");
         }catch (error) {
             console.log(error);
