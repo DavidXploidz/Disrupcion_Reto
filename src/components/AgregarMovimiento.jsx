@@ -1,9 +1,8 @@
-import React from 'react'
 import useApp from '../hooks/useApp'
 
 export default function AgregarMovimiento() {
 
-    const {handleClickModal} = useApp();
+    const {handleClickModal  } = useApp();
 
   return (
     <div className='fixed-mov'>

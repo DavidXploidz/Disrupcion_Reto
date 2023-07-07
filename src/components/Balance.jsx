@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import '../styles/utilities.css'
 import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
 
@@ -8,8 +8,8 @@ export default function Balance() {
 
     const handleClickAnaliticas = () => {
         setActive(!active)
-        console.log('Expandir alv');
     }
+    
   return (
     <div className='bg-white p-3 mt-4 rounded-10 shadow col-lg-6 mx-auto'>
         <p className='text-center fw-semibold fs-5'>Balance del mes</p>

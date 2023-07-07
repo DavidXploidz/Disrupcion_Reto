@@ -1,24 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import '../styles/months.css';
+import useApp from '../hooks/useApp';
 
 export default function Months() {
 
+    const {handleMesActual, months } = useApp()
+
     useEffect(() => {
         obtenerMesActual();
+        handleMesActual(obtenerMesActual())
     },[]);
-
-    const [months, setMonths] = useState([
-        'Enero','Febrero','Marzo','Abril','Mayo','Junio',
-        'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'
-    ]);
 
     const obtenerMesActual = () => {
         const fechaActual = new Date();
         const mes = fechaActual.getMonth(); 
         const nombreMes = actualMonth(mes);
         return nombreMes;
-      };
+    };
 
     const actualMonth = (mes) => {
         return months[mes];
