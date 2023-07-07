@@ -4,12 +4,13 @@ import AgregarMovimiento from './components/AgregarMovimiento';
 import Balance from './components/Balance';
 import Months from './components/Months';
 import ModalMovimientos from './components/ModalMovimientos';
+import Listado from './components/Listado';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
-  const { modal } = useApp();
+  const { modal, mostrar } = useApp();
 
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
       <ToastContainer />
       <div className='container'>
         <Balance />
+        {mostrar && <Listado />}
       </div>
       <AgregarMovimiento />
       {modal && (

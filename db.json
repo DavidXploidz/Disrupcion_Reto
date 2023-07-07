@@ -13,6 +13,27 @@
       "tipo": "gasto",
       "fecha": "07 julio",
       "id": 2
+    },
+    {
+      "concepto": "Netflix",
+      "cantidad": "259",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 3
+    },
+    {
+      "concepto": "Apuesta",
+      "cantidad": "200",
+      "tipo": "ingreso",
+      "fecha": "07 julio",
+      "id": 4
+    },
+    {
+      "concepto": "Chocolate",
+      "cantidad": "11.50",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 5
     }
   ]
 }

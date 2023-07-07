@@ -6,7 +6,7 @@ import '../styles/utilities.css'
 
 export default function Balance() {
 
-    let { gastos, ingresos } = useApp();
+    let { gastos, ingresos, handleClickMostrar} = useApp();
    
     const [active, setActive] = useState(false);
     const [balance, setBalance] = useState(0);
@@ -28,12 +28,12 @@ export default function Balance() {
                 <p className='mb-0 fs-5'>Ingresos</p>
                 <p className='fs-1 fw-bold'>+{formatearDinero(ingresos)}</p>
             </div>
-            <div className='col-6 text-center  app-number app-number--danger border-start'>
+            <div className='col-6 text-center app-number app-number--danger border-start'>
                 <p className='mb-0 fs-5'>Gastos</p>
                 <p className='fs-1 fw-bold'>-{formatearDinero(gastos)}</p>
             </div>
         </div>
-        <p onClick={() => handleClickAnaliticas()} className='mt-3 text-center text-body-tertiary fw-light'>Ver analíticas {active ? <FaAngleDown /> : <FaAngleUp /> } </p>
+        <p onClick={() => {handleClickAnaliticas(), handleClickMostrar()}} className='mt-3 text-center text-body-tertiary fw-light'>Ver analíticas {active ? <FaAngleDown /> : <FaAngleUp /> } </p>
     </div>
   )
 }

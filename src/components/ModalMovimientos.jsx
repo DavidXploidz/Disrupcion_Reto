@@ -78,7 +78,7 @@ export default function ModalMovimientos() {
                 {opcion === 'ingreso' && <p className='fs-5 text-secondary fw-bolder'>Nuevo Ingreso</p>}
                 <form method="POST" onSubmit={handleSubmit}>
                     <input ref={conceptoRef} className='p-1 bg-gray w-100 border rounded text-body-tertiary mb-2' type="text" placeholder='Concepto:' />
-                    <input ref={cantidadRef} className='p-1 bg-gray w-100 border rounded text-body-tertiary mb-2' type="number" placeholder='Cantidad:' />
+                    <input ref={cantidadRef} className='p-1 bg-gray w-100 border rounded text-body-tertiary mb-2' type="float" placeholder='Cantidad:' />
                     <input className='btn btn-primary' type="submit" value={"Agregar"} />
                 </form>
             </div>

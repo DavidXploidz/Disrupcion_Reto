@@ -16,6 +16,7 @@ const AppProvider = ({children}) => {
     const [movimientos, setMovimientos] = useState([]);
     const [ingresos, setIngresos] = useState([]);
     const [gastos, setGastos] = useState([]);
+    const [mostrar, setMostrar] = useState(false);
 
     useEffect(() => {
         consultarMovimientos();
@@ -27,6 +28,10 @@ const AppProvider = ({children}) => {
 
     const handleClickModal = () => {
         setModal(!modal);
+    }
+
+    const handleClickMostrar = () => {
+        setMostrar(!mostrar)
     }
 
     const consultarMovimientos = async () => {
@@ -47,7 +52,9 @@ const AppProvider = ({children}) => {
                 movimientos,
                 consultarMovimientos,
                 gastos,
-                ingresos
+                ingresos,
+                mostrar,
+                handleClickMostrar
             }} 
         >
             {children}
