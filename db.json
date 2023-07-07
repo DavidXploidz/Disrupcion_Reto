@@ -4,7 +4,7 @@
       "concepto": "Salario",
       "cantidad": "12500",
       "tipo": "ingreso",
-      "fecha": "07 julio",
+      "fecha": "06 julio",
       "id": 1
     },
     {
@@ -18,7 +18,7 @@
       "concepto": "Netflix",
       "cantidad": "259",
       "tipo": "gasto",
-      "fecha": "07 julio",
+      "fecha": "08 julio",
       "id": 3
     },
     {
@@ -34,6 +34,20 @@
       "tipo": "gasto",
       "fecha": "07 julio",
       "id": 5
+    },
+    {
+      "concepto": "Taxi",
+      "cantidad": "323",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 6
+    },
+    {
+      "concepto": "Taxi",
+      "cantidad": "33",
+      "tipo": "gasto",
+      "fecha": "07 julio",
+      "id": 7
     }
   ]
 }
