@@ -5,44 +5,9 @@
   "movimientos_abril": [],
   "movimientos_mayo": [],
   "movimientos_junio": [],
-  "movimientos_julio": [
-    {
-      "concepto": "Quincena",
-      "cantidad": "12500",
-      "tipo": "ingreso",
-      "fecha": "julio",
-      "dia": 7,
-      "id": 1
-    }
-  ],
-  "movimientos_agosto": [
-    {
-      "concepto": "Quicena",
-      "cantidad": "13000",
-      "tipo": "ingreso",
-      "fecha": "julio",
-      "dia": 7,
-      "id": 1
-    },
-    {
-      "concepto": "Putas",
-      "cantidad": "4242",
-      "tipo": "gasto",
-      "fecha": "julio",
-      "dia": 7,
-      "id": 2
-    }
-  ],
-  "movimientos_septiembre": [
-    {
-      "concepto": "Pago",
-      "cantidad": "3555",
-      "tipo": "ingreso",
-      "fecha": "julio",
-      "dia": 7,
-      "id": 1
-    }
-  ],
+  "movimientos_julio": [],
+  "movimientos_agosto": [],
+  "movimientos_septiembre": [],
   "movimientos_octubre": [],
   "movimientos_noviembre": [],
   "movimientos_diciembre": []

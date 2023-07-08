@@ -4,7 +4,7 @@ import { FaChevronDown, FaChevronUp, FaStop, FaCircle } from "react-icons/fa";
 
 export default function Movimiento({movimiento}) {
 
-  const { id, concepto, cantidad, tipo, fecha} = movimiento;
+  const { id, concepto, cantidad, tipo, fecha, dia} = movimiento;
 
   const [active, setActive] = useState(null);
 
@@ -36,7 +36,7 @@ export default function Movimiento({movimiento}) {
             </div>
         </div>
         <div className={`ps-5 pe-2 pt-2 pb-0 ${active === id ? 'd-block' : 'd-none'}`}>
-            <p className="text-body-tertiary mb-0">Contenido extra aqui!</p>
+            <p className="text-body-tertiary mb-0 d-flex justify-content-between">Contenido extra aqui! <span>{dia} - {fecha}</span></p>
         </div>
     </div>
   )

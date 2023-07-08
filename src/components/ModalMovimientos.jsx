@@ -5,6 +5,7 @@ import { createRef, useState } from "react";
 import fechaActual from "../helpers/obtenerFecha";
 import { toast } from 'react-toastify';
 import axios from "axios";
+import Alerta from "./Alerta";
 
 const customStyles = {
     content: {
@@ -12,6 +13,7 @@ const customStyles = {
       left: "50%",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
+      minHeight: "500px",
     },
 };
 
@@ -29,9 +31,16 @@ export default function ModalMovimientos() {
     
     const [opcion, setOpcion] = useState('');
     const [movimiento, setMovimiento] = useState({});
+    const [alerta, setAlerta] = useState(false);
+    const [notNum, setNotNum] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if(conceptoRef.current.value === '' || cantidadRef.current.value === '' || isNaN(cantidadRef.current.value)){
+            setNotNum(true);
+            setAlerta(true);
+            return;
+        }
         const day = new Date().getDate();
 
         const nuevoMovimiento = {
@@ -41,8 +50,9 @@ export default function ModalMovimientos() {
             fecha: fechaActual(),
             dia: day,
         };
+
         setMovimiento(nuevoMovimiento);
-    
+        
         try {
             const respuesta = await axios.post(`http://localhost:3000/movimientos_${mesActual}`, nuevoMovimiento, {
                 headers: {
@@ -57,7 +67,6 @@ export default function ModalMovimientos() {
         }
     }
 
-    console.log(movimiento)
 
   return (
     <Modal isOpen={modal} style={customStyles}>
@@ -83,6 +92,8 @@ export default function ModalMovimientos() {
                     <input ref={cantidadRef} className='p-1 bg-gray w-100 border rounded text-body-tertiary mb-2' type="float" placeholder='Cantidad:' />
                     <input className='btn btn-primary' type="submit" value={"Agregar"} />
                 </form>
+                {alerta && <Alerta>¡Todos los campos son obligatorios!</Alerta>}
+                {notNum && <Alerta>¡La cantidad deben ser números!</Alerta>}
             </div>
             )}
         </div>
