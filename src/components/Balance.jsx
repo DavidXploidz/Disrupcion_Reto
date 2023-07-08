@@ -33,7 +33,7 @@ export default function Balance() {
                 <p className='fs-1 fw-bold'>-{formatearDinero(gastos)}</p>
             </div>
         </div>
-        <p onClick={() => {handleClickAnaliticas(), handleClickMostrar()}} className='mt-3 text-center text-body-tertiary fw-light'>Ver analíticas {active ? <FaAngleDown /> : <FaAngleUp /> } </p>
+        <p onClick={() => {handleClickAnaliticas(), handleClickMostrar()}} className='mt-3 text-center text-body-tertiary fw-light'>Ver analíticas {active ? <FaAngleUp /> : <FaAngleDown /> } </p>
     </div>
   )
 }

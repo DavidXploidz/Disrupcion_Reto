@@ -32,12 +32,14 @@ export default function ModalMovimientos() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const day = new Date().getDate();
 
         const nuevoMovimiento = {
             concepto: conceptoRef.current.value,
             cantidad: cantidadRef.current.value,
             tipo: opcion,
             fecha: fechaActual(),
+            dia: day,
         };
         setMovimiento(nuevoMovimiento);
     

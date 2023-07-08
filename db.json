@@ -1,53 +1,68 @@
 {
   "movimientos": [
     {
-      "concepto": "Salario",
-      "cantidad": "12500",
+      "concepto": "Quincena",
+      "cantidad": "12000",
       "tipo": "ingreso",
-      "fecha": "06 julio",
+      "fecha": "07 julio",
+      "dia": 6,
       "id": 1
     },
     {
       "concepto": "Uber",
-      "cantidad": "85",
+      "cantidad": "45",
       "tipo": "gasto",
       "fecha": "07 julio",
+      "dia": 4,
       "id": 2
     },
     {
-      "concepto": "Netflix",
-      "cantidad": "259",
+      "concepto": "Agua",
+      "cantidad": "160",
       "tipo": "gasto",
-      "fecha": "08 julio",
+      "fecha": "07 julio",
+      "dia": 7,
       "id": 3
     },
     {
-      "concepto": "Apuesta",
-      "cantidad": "200",
-      "tipo": "ingreso",
+      "concepto": "Super",
+      "cantidad": "300",
+      "tipo": "gasto",
       "fecha": "07 julio",
+      "dia": 7,
       "id": 4
     },
     {
-      "concepto": "Chocolate",
-      "cantidad": "11.50",
-      "tipo": "gasto",
+      "concepto": "Juegos",
+      "cantidad": "100",
+      "tipo": "ingreso",
       "fecha": "07 julio",
+      "dia": 7,
       "id": 5
     },
     {
-      "concepto": "Taxi",
-      "cantidad": "323",
+      "concepto": "Renta",
+      "cantidad": "1000",
       "tipo": "gasto",
-      "fecha": "07 julio",
+      "fecha": "julio",
+      "dia": 1,
       "id": 6
     },
     {
-      "concepto": "Taxi",
-      "cantidad": "33",
-      "tipo": "gasto",
-      "fecha": "07 julio",
+      "concepto": "PAGO",
+      "cantidad": "3000",
+      "tipo": "ingreso",
+      "fecha": "julio",
+      "dia": 7,
       "id": 7
+    },
+    {
+      "concepto": "PAgo",
+      "cantidad": "32",
+      "tipo": "ingreso",
+      "fecha": "julio",
+      "dia": 7,
+      "id": 8
     }
   ]
 }
