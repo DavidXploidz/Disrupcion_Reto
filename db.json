@@ -1,68 +1,49 @@
 {
-  "movimientos": [
+  "movimientos_enero": [],
+  "movimientos_febrero": [],
+  "movimientos_marzo": [],
+  "movimientos_abril": [],
+  "movimientos_mayo": [],
+  "movimientos_junio": [],
+  "movimientos_julio": [
     {
       "concepto": "Quincena",
-      "cantidad": "12000",
+      "cantidad": "12500",
       "tipo": "ingreso",
-      "fecha": "07 julio",
-      "dia": 6,
+      "fecha": "julio",
+      "dia": 7,
+      "id": 1
+    }
+  ],
+  "movimientos_agosto": [
+    {
+      "concepto": "Quicena",
+      "cantidad": "13000",
+      "tipo": "ingreso",
+      "fecha": "julio",
+      "dia": 7,
       "id": 1
     },
     {
-      "concepto": "Uber",
-      "cantidad": "45",
+      "concepto": "Putas",
+      "cantidad": "4242",
       "tipo": "gasto",
-      "fecha": "07 julio",
-      "dia": 4,
+      "fecha": "julio",
+      "dia": 7,
       "id": 2
-    },
-    {
-      "concepto": "Agua",
-      "cantidad": "160",
-      "tipo": "gasto",
-      "fecha": "07 julio",
-      "dia": 7,
-      "id": 3
-    },
-    {
-      "concepto": "Super",
-      "cantidad": "300",
-      "tipo": "gasto",
-      "fecha": "07 julio",
-      "dia": 7,
-      "id": 4
-    },
-    {
-      "concepto": "Juegos",
-      "cantidad": "100",
-      "tipo": "ingreso",
-      "fecha": "07 julio",
-      "dia": 7,
-      "id": 5
-    },
-    {
-      "concepto": "Renta",
-      "cantidad": "1000",
-      "tipo": "gasto",
-      "fecha": "julio",
-      "dia": 1,
-      "id": 6
-    },
-    {
-      "concepto": "PAGO",
-      "cantidad": "3000",
-      "tipo": "ingreso",
-      "fecha": "julio",
-      "dia": 7,
-      "id": 7
-    },
-    {
-      "concepto": "PAgo",
-      "cantidad": "32",
-      "tipo": "ingreso",
-      "fecha": "julio",
-      "dia": 7,
-      "id": 8
     }
-  ]
+  ],
+  "movimientos_septiembre": [
+    {
+      "concepto": "Pago",
+      "cantidad": "3555",
+      "tipo": "ingreso",
+      "fecha": "julio",
+      "dia": 7,
+      "id": 1
+    }
+  ],
+  "movimientos_octubre": [],
+  "movimientos_noviembre": [],
+  "movimientos_diciembre": []
 }

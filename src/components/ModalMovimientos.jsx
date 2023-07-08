@@ -21,7 +21,7 @@ export default function ModalMovimientos() {
     const conceptoRef = createRef();
     const cantidadRef = createRef();
 
-    const { consultarMovimientos, modal, handleClickModal } = useApp();
+    const { consultarMovimientos, modal, handleClickModal, mesActual } = useApp();
  
     const handleClickAgregar = (opcion) => {
         setOpcion(opcion)
@@ -44,7 +44,7 @@ export default function ModalMovimientos() {
         setMovimiento(nuevoMovimiento);
     
         try {
-            const respuesta = await axios.post('http://localhost:3000/movimientos', nuevoMovimiento, {
+            const respuesta = await axios.post(`http://localhost:3000/movimientos_${mesActual}`, nuevoMovimiento, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
